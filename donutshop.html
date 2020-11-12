@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/cap1.jpg" alt="Cappuccino">
+        </header>
+
+        <nav>
+            <div class="button1">
+                <a href="#">HOME</a>
+                <div class="dropdown"><a href="products.html">PRODUCTS</a>
+                    <div class="dropdown-content"><a href="Coffee.html">Coffee</a><a href="pastries.html">Pastries</a>
+                    </div>
+                </div>
+                <a href="about.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+
+        <section>
+            <h1>Howdy Do It Cafe</h1>
+
+            <div class="slideshow-container">
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="images/baked-sprinkle-donuts-recipe.jpg" alt="srinkled donut" style="width:100%">
+                    <div class="text">Sprinkled Donut</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="images/Chicory-Root-Maple-and-Almond-Milk-Latte.jpg" alt="Good drink" style="width:100%">
+                    <div class="text">Chicory Root Maple with Almond Milk Latte</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="images/Raspberry-Cream-Cheese-Pastries.jpg" alt="cream cheese pastry" style="width:100%">
+                    <div class="text">Raspberry-Cream-Cheese-Pastries</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="images/cappuccino.jpg" alt="cappuccino" style="width:100%">
+                    <div class="text">The Best In Town!</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="images/chocolate-glaze.jpg" alt="chocolate-glaze" style="width:100%">
+                    <div class="text">Chocolate Glazed!!!?</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="images/french_cruller.jpg" alt="french pastry" style="width:100%">
+                    <div class="text">They are to die for!!</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="images/irish_coffee.webp" alt="irish_coffee" style="width:100%">
+                    <div class="text">The Best Around</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 5000);
+                }
+            </script>
+            <br>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam pariatur omnis voluptas hic temporibus
+                totam
+                saepe explicabo, quidem porro ad, libero corrupti, recusandae facilis exercitationem magnam esse enim
+                rerum
+                odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit sit asperiores nihil
+                quasi? Accusamus repudiandae fuga ex cum ipsam maxime, incidunt nulla iste soluta provident unde alias,
+                sint dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit magnam, dolore
+                tempora vitae autem nesciunt ea corporis odit amet alias velit! Aliquam animi, tempore laboriosam autem
+                repellat pariatur maxime!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam pariatur omnis voluptas hic temporibus
+                totam
+                saepe explicabo, quidem porro ad, libero corrupti, recusandae facilis exercitationem magnam esse enim
+                rerum
+                odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit sit asperiores nihil
+                quasi? Accusamus repudiandae fuga ex cum ipsam maxime, incidunt nulla iste soluta provident unde alias,
+                sint dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit magnam, dolore
+                tempora vitae autem nesciunt ea corporis odit amet alias velit! Aliquam animi, tempore laboriosam autem
+                repellat pariatur maxime!</p>
+        </section>
+
+        <article>For Large Orders or Just Order Ahead,<a href="mailto:albanycancode@gmail.com" target="_blank">Place
+                Order Now!</a></article>
+
+        <footer>
+            <div class="soical"><a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                <a href="http://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+                <a href="http://www.google.com" target="_blank" class="fa fa-google"></a>
+                <a href="http://www.pinterest.com" target="_blank" class="fa fa-pinterest"></a>
+                <a href="http://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+                <a href="http://www.snapchat.com" target="_blank" class="fa fa-snapchat-ghost"></a>
+                <a href="http://www.reddit.com" target="_blank" class="fa fa-reddit"></a></div>
+            <p>Main St., Troy, N.Y.
+                Donuts-&copyCopright 2020</p>
+        </footer>
+    </div>
+</body>
+
+</html>
