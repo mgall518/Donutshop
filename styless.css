@@ -23,7 +23,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+        
 }
 
 nav {
@@ -35,15 +35,15 @@ nav {
 
 }
 
-main {
+/* main { */
 
-    height: 400px;
-    text-align: center;
-    padding-top: 80px;
-    padding-left: 240px;
-    padding-right: 240px;
+    /* height: 400px; */
+    /* text-align: center; */
+    /* padding-top: 80px; */
+    /* padding-left: 240px; */
+    /* padding-right: 240px; */
     
-    }
+   /* } */
 
 footer {
     background-color: rgb(0, 0, 0,0.338);
@@ -79,7 +79,7 @@ a:link, a:visited {
     font-size: 10px;
     /* box-shadow: 0 4px #999; */
   }
-  a:hover {
+  a:hover, .dropdown-content a:hover, .dropdown:hover .dropbtn  {
     background-color:rgba(48, 45, 45, 0.338);
   }
   
@@ -110,27 +110,27 @@ a:link, a:visited {
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: rgba(48, 45, 45, 0.338)}
+  /* .dropdown-content a:hover {background-color: rgba(48, 45, 45, 0.338)} */
   
   .dropdown:hover .dropdown-content {
     display: block;
-  }
+  } 
   
-  .dropdown:hover .dropbtn {
+  /* .dropdown:hover .dropbtn {
     background-color: rgba(48, 45, 45, 0.338)
-  }
+  } */
   * {
       box-sizing: border-box
   }
 
-  .row  {
+  /* .row  {
       display: flex;
       flex-direction:row nowrap;
       padding: 0 4px;
-   }
+   } */
 
 
-.row2 {
+.row2,.row {
     display: flex;
     flex-direction:row nowrap;
     padding: 2px 4px;
@@ -182,7 +182,7 @@ h2{
   text-align: center
 }
 
-.center {
+.center, .social {
   position: relative;
   text-align: center;
 }
@@ -202,9 +202,9 @@ h2{
   text-decoration: none;
   margin: 5px 2px;
 }
-.social{
+/* .social{
   text-align: center;
-}
+} */
 
 input[type=text], select, textarea {
   width: 100%;
@@ -219,6 +219,8 @@ input[type=text], select, textarea {
 
 .slideshow-container {
   max-width: 500px;
+  min-height: 500px;
+  max-height: 500px;
   position: relative;
   margin: auto;
 }
@@ -227,7 +229,7 @@ input[type=text], select, textarea {
   display: none;
 }
 
-.prev, .next {
+ .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -249,10 +251,10 @@ input[type=text], select, textarea {
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
+} 
 
 .text {
-  color:rgb(255, 0, 0);
+  color:white;
   font-weight: bolder;
   font-size: 15px;
   padding: 8px 12px;
