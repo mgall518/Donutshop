@@ -3,11 +3,12 @@ html {width: 100%;}
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 body {
+/* width: 171vh; */
 background-color: black;
 background-image: url(images/valrhona_chocolate_croissants.jpg);
 background-size: cover;
-background-repeat: repeat;
-background-position: center; 
+background-repeat: no-repeat;
+background-position: center;
 color: white;
 font-size: 20px;
 font-family:'Architects Daughter', cursive;
@@ -15,7 +16,7 @@ font-family:'Architects Daughter', cursive;
 
 header {
     height:116px;
-    width: 1024px;
+    /* width: 1024px; */
     text-align: center;
     padding-top: 20px;
     background-color:rgb(0, 0, 0,0.338);
@@ -57,7 +58,7 @@ footer {
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1024px;
+    width: 171vh;
 }
 
  .button1 {
@@ -202,9 +203,9 @@ h2{
   text-decoration: none;
   margin: 5px 2px;
 }
-/* .social{
+.social{
   text-align: center;
-} */
+} 
 
 input[type=text], select, textarea {
   width: 100%;
